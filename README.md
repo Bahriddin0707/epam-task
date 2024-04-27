@@ -6,8 +6,6 @@
 
 **Backend:** https://github.com/mikhama/async-race-api.git
 
-**Done:** 11.04.2024 / deadline 18.04.2024
-
 **Score:** 340/370
 
 ## Key Features
