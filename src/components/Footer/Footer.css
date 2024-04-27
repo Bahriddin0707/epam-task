@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+footer span {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #b4f5fc;
+}
+
+footer .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+footer .pagination button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  color: #b4f5fc;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'KosanNonCommercial';
+  src: url(../assets/font/KosanNonCommercial.otf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'KosanNonCommercial';
+}

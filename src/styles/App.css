@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Raleway+Dots&display=swap');
+
+body {
+  background-color: #000;
+  background: url(../assets/bg-image.jpg) no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 2rem;
+  position: relative;
+  max-width: 1240px;
+  margin: auto;
+}
+
+.container .controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.container .controls .input,
+.container .controls .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .controls button {
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #b4f5fc;
+  box-shadow: 0 1px #b4f5fc;
+  color: #b4f5fc;
+  height: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 15px;
+  letter-spacing: 2px;
+}
+
+.container .controls button.inactive {
+  border-color: #4d5063;
+  color: #4d5063;
+  box-shadow: 0 0 0;
+  cursor: no-drop;
+}
+
+.container .controls .input input[type='text'] {
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #b4f5fc;
+  box-shadow: 0 1px #b4f5fc;
+  color: #fff;
+  height: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 10px;
+  outline: none;
+  color: #b4f5fc;
+}
+
+.container .controls .input input[type='color'] {
+  width: 30px;
+  height: 30px;
+}
+.cars-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.cars-quantity span {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #b4f5fc;
+}
+
+.cars-quantity button {
+  width: 100px;
+  height: 30px;
+  background-color: #b4f5fc;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.car-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  gap: 80px;
+}
+
+.car-container .car {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.car-container .car .car-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.car-container .car .car-btns .btns {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.car-container .car .car-btns .btns:first-child button,
+.car-container .car .car-btns .btns:last-child button {
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid #b4f5fc;
+  color: #b4f5fc;
+  height: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.car-container .car .car-btns .btns:last-child button {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+}
+
+.car-container .car .car-btns .btns:last-child button:first-child {
+  border-color: #f7fac7;
+  color: #fac7c7;
+  box-shadow:
+    0 0 2px #f7fac7,
+    0 0 2px #f7fac7 inset;
+}
+
+.car-container .car .car-btns .btns:last-child button:last-child {
+  border-color: #b5f6bf;
+  color: #b5f6bf;
+  box-shadow:
+    0 0 2px #b5f6bf,
+    0 0 2px #b5f6bf inset;
+}
+
+.car-container .car .car-btns .btns:last-child button.inactive {
+  border-color: #4d5063;
+  color: #634d5a;
+  box-shadow: 0 0 0;
+  cursor: no-drop;
+}
+
+.car-container .road {
+  width: 62%;
+  height: 70px;
+  border: 2px solid transparent;
+  border-top-color: #3004f1;
+  border-bottom-color: #c11212;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.car-container .road::before {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 100%;
+  border: 2px solid transparent;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-left: none;
+  border-right: none;
+  right: -112px;
+}
+
+.car-container .car-name {
+  font-size: 2rem;
+  position: absolute;
+  left: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Codystar', sans-serif;
+  font-weight: bold;
+}
+
+.car-container .image svg {
+  position: relative;
+  z-index: 1;
+  left: 0;
+}
+
+@keyframes run {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 1130px;
+  }
+}
+
+@keyframes run-in-mobile {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 400px;
+  }
+}
+
+.car-container .image.drive svg {
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-name: run;
+}
+
+.car-container .image.crash svg {
+  animation-play-state: paused;
+}
+
+.road-arrow {
+  width: 100%;
+  height: 30px;
+  background: url(../assets/arrow.svg);
+  background-size: contain;
+  position: relative;
+}
+
+.road-arrow::before,
+.road-arrow::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  left: 0;
+  box-shadow: 0 0 2px #fff;
+}
+
+.road-arrow::before {
+  top: -10px;
+}
+
+.road-arrow::after {
+  bottom: -10px;
+}
+
+.road-wrapper {
+  position: relative;
+}
+
+.point-line {
+  width: 40px;
+  height: calc(100% - 20px);
+  position: absolute;
+  left: 300px;
+  top: 10px;
+  border: 2px solid transparent;
+  background: url(../assets/pointline.png);
+  background-size: 40px;
+  background-position: -1px 0;
+  filter: drop-shadow(0 0 1px #db3bf2);
+}
+
+.point-line::before,
+.point-line::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 2px #fff;
+}
+
+.point-line::before {
+  left: -5px;
+}
+
+.point-line::after {
+  right: -8px;
+}
+
+.point-line.finish {
+  left: calc(100% - 100px);
+}
+
+select {
+  color: #000;
+  background-color: #b4f5fc;
+  border: none;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  appearance: none;
+  text-align: center;
+}

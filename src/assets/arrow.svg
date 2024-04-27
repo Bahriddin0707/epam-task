@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="122px" height="83px" viewBox="0 0 122 83" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 128 0" />
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.972549 0 0 0 0 0.78431374 0 0 0 0 0.13333334 0 0 0 1 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 128 0" />
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+    <path d="M122 0L122 0L122 83L0 83L0 0L122 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <image width="128" height="128" xlink:href="data:image/png;base64,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" id="img_1" />
+    <pattern patternUnits="objectBoundingBox" y="-0%" height="100%" width="100%" id="pattern_1">
+      <use xlink:href="#img_1" transform="matrix(0.75 0 0 0.75 0 0)" />
+    </pattern>
+  </defs>
+  <g id="Frame">
+    <path d="M122 0L122 0L122 83L0 83L0 0L122 0Z" id="Frame" fill="none" stroke="none" />
+    <path d="M42 -6L138 -6L138 90L42 90L42 -6Z" id="Chevron-Right" fill="url(#pattern_1)" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" clip-path="url(#clip_1)" />
+    <path d="M-17 -6L79 -6L79 90L-17 90L-17 -6Z" id="Chevron-Right" fill="url(#pattern_1)" fill-rule="evenodd" stroke="none" filter="url(#filter_2)" clip-path="url(#clip_1)" />
+  </g>
+</svg>

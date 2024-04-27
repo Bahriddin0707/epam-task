@@ -1,0 +1,8 @@
+@media screen and (max-width: 767px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scale: 0.25;
+    }
+}
