@@ -39,5 +39,11 @@ npm run start
 
 ## App
 
+![image](https://github.com/Bahriddin0707/epam-task/assets/92244710/99d53397-2109-4061-a007-c77f666f00f1)
+
+![image](https://github.com/Bahriddin0707/epam-task/assets/92244710/0938500e-ddc4-4e97-bd32-115a2b4b1aac)
+
+
+
 
 
